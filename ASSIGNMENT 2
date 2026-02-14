@@ -1,0 +1,33 @@
+1. What is the primary function of the arp command in a Linux system? 
+The arp command is used to check and manage how your computer connects IP addresses to physical device addresses (called MAC addresses). Basically, it helps your system find the actual device on the network when you only know its IP address. This is important so data reaches the correct machine. 
+
+2. How do the routed and gated daemons differ in their approach to routing? 
+routed is a simple routing program that mainly uses basic routing protocols like RIP to update routes. On the other hand, gated is more advanced and supports multiple routing protocols, making it suitable for complex and large networks. So, gated is more flexible and powerful.
+
+3. Explain the mechanism used by the traceroute command to identify gateways. 
+traceroute works by sending packets with increasing time limits (TTL). Each router decreases this value, and when it becomes zero, the router sends back a message. This helps traceroute identify every gateway between your system and the destination.
+
+4. What are the three physical variations of Ethernet mentioned, and how do they 
+differ in connection method? 
+The three main Ethernet types are coaxial cable, twisted pair, and fiber. Coaxial uses a single thick cable, twisted pair uses copper wires (like LAN cables), and fiber uses light through optical fibers. They differ in speed, cost, and how data is transmitted.
+
+5. What information is contained within the /etc/services and /etc/protocols 
+files? 
+The /etc/services file lists common network services and their port numbers, like HTTP or FTP. The /etc/protocols file contains details about networking protocols like TCP and UDP. These help your system understand how to communicate with other devices.
+
+6. What is the purpose of the loopback interface (127.0.0.1)? 
+The loopback address lets your computer talk to itself. It is mainly used for testing network programs and checking whether services are running properly. This works even without an internet connection.
+
+7. Describe the fundamental difference between the Transmission Control Protocol 
+(TCP) and the User Datagram Protocol (UDP). 
+TCP is reliable and ensures all data reaches the destination correctly and in order. UDP is faster but does not guarantee delivery or order. So, TCP is used for important tasks, while UDP is used for speed-based applications like video streaming or gaming.
+
+8. What is "IP Masquerade," and what is its primary benefit for a network? 
+IP Masquerade allows many devices in a private network to share one public IP address. This improves security and saves public IP addresses. It is commonly used in home and office routers.
+
+9. Describe the process of "Address Resolution" on an Ethernet network. 
+When a system wants to send data, it first knows the IP address but needs the MAC address. It sends a request on the network asking, “Who has this IP?” The device with that IP responds, and communication begins.
+
+10. In a networking context, what is a "gateway," and what is required for its IP 
+configuration?
+A gateway connects different networks and forwards data between them. It needs an IP address and proper routing information so it knows where to send the data. It acts like a door between networks.
